@@ -1,0 +1,19 @@
+Airbasic.out - Basic aircraft
+Aircraft.out - All Aircraft
+Asaedep.out - ASAE Deposition
+Asaedrp.out - ASAE Dropsize
+Atomize.out - SDTF Proprietary spray material 
+Atomize.wld - "World" Dropsize
+Dropsize.out
+Evap.out
+Evap.wld
+Fieldrun.out
+Nd.out
+Nd.wld
+Nozbasic.out
+Nozzle.out  - Nozzles for DropKick
+  Name, Dv0.5, slope, Eff Diam
+Samson.out
+Sngldep.out
+Subst.out
+Subst.wld

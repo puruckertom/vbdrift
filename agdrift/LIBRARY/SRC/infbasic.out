@@ -1,0 +1,160 @@
+1 0 5
+Low Boom ASAE Very Fine to Fine
+Boom Height: 0.508 m (20 in)
+Swath Width: 13.72 m (45 ft)
+Dv0.5: 175 um
+Application Efficiency (%) (20 swaths): 99.39
+1 1 5
+Low Boom ASAE Fine to Medium/Coarse
+Boom Height: 0.508 m (20 in)
+Swath Width: 13.72 m (45 ft)
+Dv0.5: 341 um
+Application Efficiency (%) (20 swaths): 99.64
+1 2 5
+High Boom ASAE Very Fine to Fine
+Boom Height: 1.27 m (50 in)
+Swath Width: 13.72 m (45 ft)
+Dv0.5: 175 um
+Application Efficiency (%) (20 swaths): 98.32
+1 3 5
+High Boom ASAE Fine to Medium/Coarse
+Boom Height: 1.27 m (50 in)
+Swath Width: 13.72 m (45 ft)
+Dv0.5: 341 um
+Application Efficiency (%) (20 swaths): 99.49
+1 4 5
+Low Boom ASAE Very Fine to Fine
+Boom Height: 0.508 m (20 in)
+Swath Width: 13.72 m (45 ft)
+Dv0.5: 175 um
+Application Efficiency (%) (20 swaths): 98.89
+1 5 5
+Low Boom ASAE Fine to Medium/Coarse
+Boom Height: 0.508 m (20 in)
+Swath Width: 13.72 m (45 ft)
+Dv0.5: 341 um
+Application Efficiency (%) (20 swaths): 99.27
+1 6 5
+High Boom ASAE Very Fine to Fine
+Boom Height: 1.27 m (50 in)
+Swath Width: 13.72 m (45 ft)
+Dv0.5: 175 um
+Application Efficiency (%) (20 swaths): 97.96
+1 7 5
+High Boom ASAE Fine to Medium/Coarse
+Boom Height: 1.27 m (50 in)
+Swath Width: 13.72 m (45 ft)
+Dv0.5: 341 um
+Application Efficiency (%) (20 swaths): 99.22
+2 0 4
+Normal (Stone and Pome Fruit, Vineyard)
+This composite orchard combines Grape and Apple orchards.
+Mean deposition
+Application Efficiency (%) (20 rows): 99.85
+2 1 4
+Dense (Citrus, Tall Trees)
+This composite orchard combines Almond, Orange, Grapefruit, Small Grapefruit (mist blower), and Pecan orchards.
+Mean deposition
+Application Efficiency (%) (20 rows): 98.01
+2 2 4
+Sparse (Young, Dormant)
+This composite orchard combines Small Grapefruit and Dormant Apple orchards.
+Mean deposition
+Application Efficiency (%) (20 rows): 97.69
+2 3 7
+Grapes (wrap-around sprayer)
+Average Height: 1.83 m (6 ft)
+Row Spacing: 2.66 m (12 ft)
+Leaf Area Index: 1.52
+Sprayer Type: Wrap-Around Sprayer
+Dv0.5: 197 to 249 um (pressure and orifice dependent)
+Application Efficiency (%) (20 rows): 99.85
+2 4 7
+Grapes
+Average Height: 1.83 m (6 ft)
+Row Spacing: 2.66 m (12 ft)
+Leaf Area Index: 1.52
+Sprayer Type: Wilbur-Ellis Axial Fan Orchard Airblast Sprayer
+Dv0.5: 122 um
+Application Efficiency (%) (20 rows): 99.73
+2 5 7
+Apples
+Average Height: 4.27 m (14 ft)
+Row Spacing: 4.88 m (16 ft)
+Leaf Area Index: 1.91
+Sprayer Type: Wilbur-Ellis Axial Fan Orchard Airblast Sprayer
+Dv0.5: 134 um
+Application Efficiency (%) (20 rows): 99.69
+2 6 7
+Almonds
+Average Height: 7.92 m (26 ft)
+Row Spacing: 6.71 m (22 ft)
+Leaf Area Index: 1.57
+Sprayer Type: Wilbur-Ellis Axial Fan Orchard Airblast Sprayer
+Dv0.5: 137 um
+Application Efficiency (%) (20 rows): 99.69
+2 7 7
+Oranges
+Average Height: 5.18 m (17 ft)
+Row Spacing: 6.71 m (22 ft)
+Leaf Area Index: 2.81
+Sprayer Type: Wilbur-Ellis Axial Fan Orchard Airblast Sprayer
+Dv0.5: 144 um
+Application Efficiency (%) (20 rows): 99.33
+2 8 7
+Grapefruit
+Average Height: 4.57 m (15 ft)
+Row Spacing: 7.62 m (25 ft)
+Leaf Area Index: 2.77
+Sprayer Type: Wilbur-Ellis Axial Fan Orchard Airblast Sprayer
+Dv0.5: 129 to 166 um (pressure dependent)
+Application Efficiency (%) (20 rows): 99.01
+2 9 7
+Grapefruit (mist blower)
+Average Height: 4.57 m (15 ft)
+Row Spacing: 7.62 m (25 ft)
+Leaf Area Index: 2.77
+Sprayer Type: AgTec Mistblower
+Dv0.5: 134 um
+Application Efficiency (%) (20 rows): 99.41
+2 10 7
+Small Grapefruit
+Average Height: 2.13 m (7 ft)
+Row Spacing: 7.01 m (23 ft)
+Leaf Area Index: 3.10
+Sprayer Type: Wilbur-Ellis Axial Fan Orchard Airblast Sprayer
+Dv0.5: 132 to 170 um (pressure dependent)
+Application Efficiency (%) (20 rows): 98.03
+2 11 7
+Small Grapefruit (mist blower)
+Average Height: 2.13 m (7 ft)
+Row Spacing: 7.01 m (23 ft)
+Leaf Area Index: 3.10
+Sprayer Type: AgTec Mistblower
+Dv0.5: 134 um
+Application Efficiency (%) (20 rows): 99.22
+2 12 7
+Pecans
+Average Height: 20.73 m (68 ft)
+Row Spacing: 16.15 m (53 ft)
+Leaf Area Index: 1.96
+Sprayer Type: FMC Axial Fan Orchard Airblast Sprayer
+Dv0.5: 146 um
+Application Efficiency (%) (20 rows): 99.25
+2 13 7
+Dormant Apples
+Average Height: 4.27 m (14 ft)
+Row Spacing: 4.88 m (16 ft)
+Leaf Area Index: 0.30
+Sprayer Type: Wilbur-Ellis Axial Fan Orchard Airblast Sprayer
+Dv0.5: 172 um
+Application Efficiency (%) (20 rows): 95.85
+2 14 3
+Vineyard
+This composite curve combines Grape airblast sprayer applications, and may not apply to other application equipment.
+Application Efficiency (%) (20 rows): 99.73
+2 15 4
+Orchard
+This composite orchard combines Apple, Almond, Orange, Grapefruit, Small Grapefruit, Pecan, and Dormant Apple orchards.
+Mean deposition
+Application Efficiency (%) (20 rows): 98.63

@@ -1,0 +1,371 @@
+[Root]
+Most Recent Package=AgDRIFT Public Setup Package
+Most Recent Deploy=AgDRIFT Folder Deployment 1
+
+[Deploy|AgDRIFT Folder Deployment 1|Root]
+Package=AgDRIFT Regulatory Setup Package
+Handler=PDWizard.FolderDplySubWiz
+Folder=C:\Pub\AgDRIFT 2.0
+
+
+[Package|AgDRIFT Regulatory Setup Package|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\SETUP\dist_reg
+
+[Package|AgDRIFT Regulatory Setup Package|Configure DAO ISAMs]
+Applicable=Yes
+Jet 2.x=No
+
+[Package|AgDRIFT Regulatory Setup Package|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|AgDRIFT Regulatory Setup Package|Files Found]
+agdmaa.mdb=C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\agdmaa.mdb
+
+[Package|AgDRIFT Regulatory Setup Package|Files Released]
+
+[Package|AgDRIFT Regulatory Setup Package|Missing Dependency Information]
+
+[Package|AgDRIFT Regulatory Setup Package|Out-of-Date Dependency Information]
+C:\WINDOWS\SYSTEM32\scrrun.dll=
+
+[Package|AgDRIFT Regulatory Setup Package|Files Added]
+c:\documents and settings\xpmuser\my documents\work\agdrift\usermanual_reg.pdf=
+c:\documents and settings\xpmuser\my documents\work\agdrift\agdmaa.mdb=
+c:\documents and settings\xpmuser\my documents\work\agdrift\agdrift.hlp=
+c:\documents and settings\xpmuser\my documents\work\agdrift\agdrift.mdb=
+c:\documents and settings\xpmuser\my documents\work\agdrift\agdsdtf.mdb=
+
+[Package|AgDRIFT Regulatory Setup Package|Files Removed]
+
+[Package|AgDRIFT Regulatory Setup Package|Files In Project]
+C:\WINDOWS\SYSTEM32\msvbvm60.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO2535.TLB=Yes
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL=Yes
+C:\WINDOWS\SYSTEM32\MSJET35.DLL=Yes
+C:\WINDOWS\SYSTEM32\MSJTER35.DLL=Yes
+C:\WINDOWS\SYSTEM32\MSJINT35.DLL=Yes
+C:\WINDOWS\SYSTEM32\vbajet32.dll=Yes
+C:\WINDOWS\SYSTEM32\expsrv.dll=Yes
+C:\WINDOWS\SYSTEM32\Msrd2x35.dll=Yes
+C:\WINDOWS\SYSTEM32\msrepl35.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=Yes
+C:\WINDOWS\SYSTEM32\VB5DB.DLL=Yes
+C:\WINDOWS\SYSTEM32\scrrun.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT.DLL=Yes
+C:\WINDOWS\SYSTEM32\comdlg32.ocx=Yes
+C:\WINDOWS\SYSTEM32\MSFLXGRD.OCX=Yes
+C:\WINDOWS\SYSTEM32\Richtx32.ocx=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+C:\WINDOWS\SYSTEM32\MSCHRT20.OCX=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\SYSTEM32\VB6STKIT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\Agdrift.exe=Yes
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\agdrift32.dll=Yes
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\UserManual_reg.PDF=Yes
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\agdmaa.mdb=Yes
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\AGDRIFT.HLP=Yes
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\agdrift.mdb=Yes
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\agdsdtf.mdb=Yes
+
+[Package|AgDRIFT Regulatory Setup Package|Configure Registry Files]
+Applicable=No
+
+[Package|AgDRIFT Regulatory Setup Package|Configure Remote Servers]
+Applicable=No
+
+[Package|AgDRIFT Regulatory Setup Package|Install Locations]
+C:\Documents and Settings\tom\My Documents\Work\agdrift\Agdrift.exe=$(AppPath)
+C:\WINDOWS\SYSTEM32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Documents and Settings\tom\My Documents\Work\agdrift\agdrift32.dll=$(AppPath)
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO2535.TLB=$(MSDAOPath)
+C:\Program Files\Common Files\Microsoft Shared\DAO\DAO350.DLL=$(MSDAOPath)
+C:\WINDOWS\SYSTEM32\MSJET35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\MSJTER35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\MSJINT35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\vbajet32.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\expsrv.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\Msrd2x35.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\msrepl35.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\VB5DB.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM32\scrrun.dll=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\comdlg32.ocx=$(WinSysPath)
+C:\WINDOWS\SYSTEM32\MSFLXGRD.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM32\Richtx32.ocx=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\MSCHRT20.OCX=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Documents and Settings\tom\My Documents\Work\agdrift\UserManual_reg.PDF=$(AppPath)
+C:\Documents and Settings\tom\My Documents\Work\agdrift\agdmaa.mdb=$(AppPath)
+C:\Documents and Settings\tom\My Documents\Work\agdrift\AGDRIFT.HLP=$(AppPath)
+C:\Documents and Settings\tom\My Documents\Work\agdrift\agdrift.mdb=$(AppPath)
+C:\Documents and Settings\tom\My Documents\Work\agdrift\agdsdtf.mdb=$(AppPath)
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\Agdrift.exe=$(AppPath)
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\agdrift32.dll=$(AppPath)
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\UserManual_reg.PDF=$(AppPath)
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\agdmaa.mdb=$(AppPath)
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\AGDRIFT.HLP=$(AppPath)
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\agdrift.mdb=$(AppPath)
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\agdsdtf.mdb=$(AppPath)
+
+[Package|AgDRIFT Regulatory Setup Package|Configure Shared Files]
+Applicable=Yes
+C:\Documents and Settings\tom\My Documents\Work\agdrift\Agdrift.exe=No
+C:\Documents and Settings\tom\My Documents\Work\agdrift\agdrift32.dll=No
+C:\Documents and Settings\tom\My Documents\Work\agdrift\UserManual_reg.PDF=No
+C:\Documents and Settings\tom\My Documents\Work\agdrift\agdmaa.mdb=No
+C:\Documents and Settings\tom\My Documents\Work\agdrift\AGDRIFT.HLP=No
+C:\Documents and Settings\tom\My Documents\Work\agdrift\agdrift.mdb=No
+C:\Documents and Settings\tom\My Documents\Work\agdrift\agdsdtf.mdb=No
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\Agdrift.exe=No
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\agdrift32.dll=No
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\UserManual_reg.PDF=No
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\agdmaa.mdb=No
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\AGDRIFT.HLP=No
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\agdrift.mdb=No
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\agdsdtf.mdb=No
+
+[Package|AgDRIFT Regulatory Setup Package|Distribution]
+Type=single
+Size=
+Title=AgDRIFT
+
+[Package|AgDRIFT Regulatory Setup Package|IconGroups]
+Group0=AgDRIFT
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|AgDRIFT Regulatory Setup Package|AgDRIFT]
+Icon1=Agdrift.exe
+Title1=AgDRIFT
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|AgDRIFT Regulatory Setup Package|Package]
+PackageFolder=C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\SETUP\dist_reg
+ProjectFolder=C:\Documents and Settings\XPMUser\My Documents\Work\agdrift
+ServerSideCab=
+File1=C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\SETUP\dist_reg\setup.exe
+File2=C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\SETUP\dist_reg\Setup.Lst
+File3=C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\SETUP\dist_reg\Agdrift.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|AgDRIFT Public Setup Package|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\SETUP\dist_pub
+
+[Package|AgDRIFT Public Setup Package|Configure DAO ISAMs]
+Applicable=Yes
+Jet 2.x=No
+
+[Package|AgDRIFT Public Setup Package|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|AgDRIFT Public Setup Package|Files Found]
+agdmaa.mdb=C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\agdmaa.mdb
+
+[Package|AgDRIFT Public Setup Package|Files Released]
+User.DLL=
+
+[Package|AgDRIFT Public Setup Package|Missing Dependency Information]
+
+[Package|AgDRIFT Public Setup Package|Out-of-Date Dependency Information]
+C:\WINDOWS\system32\scrrun.dll=
+
+[Package|AgDRIFT Public Setup Package|Files Added]
+usermanual_pub.pdf=
+agdrift.mdb=
+agdmaa.mdb=
+agdrift.hlp=
+
+[Package|AgDRIFT Public Setup Package|Files Removed]
+
+[Package|AgDRIFT Public Setup Package|Files In Project]
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Program Files\Common Files\Microsoft Shared\DAO\dao2535.tlb=Yes
+C:\Program Files\Common Files\Microsoft Shared\DAO\dao350.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\setup1.exe=Yes
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\Agdrift.exe=Yes
+C:\WINDOWS\system32\msvbvm60.dll=Yes
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\agdrift32.dll=Yes
+C:\WINDOWS\system32\MSJET35.DLL=Yes
+C:\WINDOWS\system32\MSJTER35.DLL=Yes
+C:\WINDOWS\system32\MSJINT35.DLL=Yes
+C:\WINDOWS\system32\vbajet32.dll=Yes
+C:\WINDOWS\system32\expsrv.dll=Yes
+C:\WINDOWS\system32\MSRD2X35.DLL=Yes
+C:\WINDOWS\system32\MSREPL35.DLL=Yes
+C:\WINDOWS\system32\VB5DB.DLL=Yes
+C:\WINDOWS\system32\scrrun.dll=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT.DLL=Yes
+C:\WINDOWS\system32\COMDLG32.OCX=Yes
+C:\WINDOWS\system32\MSFLXGRD.OCX=Yes
+C:\WINDOWS\system32\RICHTX32.OCX=Yes
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+C:\WINDOWS\system32\MSCHRT20.OCX=Yes
+C:\WINDOWS\system32\VB6STKIT.DLL=Yes
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\UserManual_pub.PDF=Yes
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\agdrift.mdb=Yes
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\agdmaa.mdb=Yes
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\AGDRIFT.HLP=Yes
+
+[Package|AgDRIFT Public Setup Package|Configure Registry Files]
+Applicable=No
+
+[Package|AgDRIFT Public Setup Package|Configure Remote Servers]
+Applicable=No
+
+[Package|AgDRIFT Public Setup Package|Install Locations]
+C:\My Documents\Work\agdrift\AGDRIFT.EXE=$(AppPath)
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\My Documents\Work\agdrift\agdrift32.dll=$(AppPath)
+C:\WINDOWS\SYSTEM\COMDLG32.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\GRID32.OCX=$(AppPath)
+C:\Program Files\Common Files\Microsoft Shared\DAO\dao2535.tlb=$(MSDAOPath)
+C:\Program Files\Common Files\Microsoft Shared\DAO\dao350.dll=$(MSDAOPath)
+C:\WINDOWS\SYSTEM\msjet35.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\msjter35.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\msjint35.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\VBAJET32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\expsrv.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\msrd2x35.dll=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\msrepl35.dll=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT40.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\VB5DB.DLL=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\My Documents\Work\agdrift\Setup\Setup1\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\My Documents\Work\agdrift\usermanual_pub.pdf=$(AppPath)
+C:\My Documents\Work\agdrift\agdrift.mdb=$(AppPath)
+C:\My Documents\Work\agdrift\agdmaa.mdb=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\setup1.exe=$(WinPath)
+C:\My Documents\Work\agdrift\AGDRIFT.HLP=$(AppPath)
+C:\Pub\agdrift\Agdrift.exe=$(AppPath)
+C:\Pub\agdrift\agdrift32.dll=$(AppPath)
+C:\Documents and Settings\tom\My Documents\Work\agdrift\Agdrift.exe=$(AppPath)
+C:\WINDOWS\SYSTEM32\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\Documents and Settings\tom\My Documents\Work\agdrift\agdrift32.dll=$(AppPath)
+C:\WINDOWS\SYSTEM32\comdlg32.ocx=$(WinSysPath)
+C:\Documents and Settings\tom\My Documents\Work\agdrift\GRID32.OCX=$(AppPath)
+C:\WINDOWS\SYSTEM32\MSJET35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\MSJTER35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\MSJINT35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\VBAJET32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\EXPSRV.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\MSRD2X35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\MSREPL35.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM32\VB5DB.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Documents and Settings\tom\My Documents\Work\agdrift\UserManual_pub.PDF=$(AppPath)
+C:\Documents and Settings\tom\My Documents\Work\agdrift\agdrift.mdb=$(AppPath)
+C:\Documents and Settings\tom\My Documents\Work\agdrift\agdmaa.mdb=$(AppPath)
+C:\Documents and Settings\tom\My Documents\Work\agdrift\AGDRIFT.HLP=$(AppPath)
+\\Svr1\home1\tom\My Documents\Work\agdrift\Agdrift.exe=$(AppPath)
+\\Svr1\home1\tom\My Documents\Work\agdrift\agdrift32.dll=$(AppPath)
+H:\tom\My Documents\Work\agdrift\UserManual_pub.PDF=$(AppPath)
+H:\tom\My Documents\Work\agdrift\agdrift.mdb=$(AppPath)
+H:\tom\My Documents\Work\agdrift\agdmaa.mdb=$(AppPath)
+H:\tom\My Documents\Work\agdrift\AGDRIFT.HLP=$(AppPath)
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\Agdrift.exe=$(AppPath)
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\agdrift32.dll=$(AppPath)
+C:\WINDOWS\system32\scrrun.dll=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MSVCRT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSFLXGRD.OCX=$(WinSysPath)
+C:\WINDOWS\system32\RICHTX32.OCX=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\system32\MSCHRT20.OCX=$(WinSysPath)
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\UserManual_pub.PDF=$(AppPath)
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\agdrift.mdb=$(AppPath)
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\agdmaa.mdb=$(AppPath)
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\AGDRIFT.HLP=$(AppPath)
+
+[Package|AgDRIFT Public Setup Package|Configure Shared Files]
+Applicable=Yes
+C:\My Documents\Work\agdrift\AGDRIFT.EXE=No
+C:\My Documents\Work\agdrift\agdrift32.dll=No
+C:\WINDOWS\SYSTEM\GRID32.OCX=No
+C:\My Documents\Work\agdrift\usermanual_pub.pdf=No
+C:\My Documents\Work\agdrift\agdrift.mdb=No
+C:\My Documents\Work\agdrift\agdmaa.mdb=No
+C:\My Documents\Work\agdrift\AGDRIFT.HLP=No
+C:\Pub\agdrift\Agdrift.exe=No
+C:\Pub\agdrift\agdrift32.dll=No
+C:\Documents and Settings\tom\My Documents\Work\agdrift\Agdrift.exe=No
+C:\Documents and Settings\tom\My Documents\Work\agdrift\agdrift32.dll=No
+C:\Documents and Settings\tom\My Documents\Work\agdrift\GRID32.OCX=No
+C:\Documents and Settings\tom\My Documents\Work\agdrift\UserManual_pub.PDF=No
+C:\Documents and Settings\tom\My Documents\Work\agdrift\agdrift.mdb=No
+C:\Documents and Settings\tom\My Documents\Work\agdrift\agdmaa.mdb=No
+C:\Documents and Settings\tom\My Documents\Work\agdrift\AGDRIFT.HLP=No
+\\Svr1\home1\tom\My Documents\Work\agdrift\Agdrift.exe=No
+\\Svr1\home1\tom\My Documents\Work\agdrift\agdrift32.dll=No
+H:\tom\My Documents\Work\agdrift\UserManual_pub.PDF=No
+H:\tom\My Documents\Work\agdrift\agdrift.mdb=No
+H:\tom\My Documents\Work\agdrift\agdmaa.mdb=No
+H:\tom\My Documents\Work\agdrift\AGDRIFT.HLP=No
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\Agdrift.exe=No
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\agdrift32.dll=No
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\UserManual_pub.PDF=No
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\agdrift.mdb=No
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\agdmaa.mdb=No
+C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\AGDRIFT.HLP=No
+
+[Package|AgDRIFT Public Setup Package|Distribution]
+Type=single
+Size=
+Title=AgDRIFT
+
+[Package|AgDRIFT Public Setup Package|IconGroups]
+Group0=AgDRIFT
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|AgDRIFT Public Setup Package|AgDRIFT]
+Icon1=Agdrift.exe
+Title1=AgDRIFT
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|AgDRIFT Public Setup Package|Package]
+PackageFolder=C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\SETUP\dist_pub
+ProjectFolder=C:\Documents and Settings\XPMUser\My Documents\Work\agdrift
+ServerSideCab=
+File1=C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\SETUP\dist_pub\setup.exe
+File2=C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\SETUP\dist_pub\Setup.Lst
+File3=C:\Documents and Settings\XPMUser\My Documents\Work\agdrift\SETUP\dist_pub\Agdrift.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

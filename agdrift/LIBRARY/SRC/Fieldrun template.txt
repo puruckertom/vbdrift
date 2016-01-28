@@ -1,0 +1,37 @@
+title
+number of drop sizes
+  loop: drop size + volume fraction
+aircraft name
+aircraft type (3 or 4)
+semispan (m)
+spraying speed (m/sec)
+weight (kg)
+biplane wing separation (m) [always 0.0]
+planform area (sq m)
+helicopter/propeller rpm
+propeller radius (m)
+propeller vertical location (m)
+propeller forward location (m)
+number of nozzles
+  loop: nozzle horizontal location (m)
+boom vertical location (m)
+boom forward location (m)
+specific gravity
+wind speed (m/sec)
+canopy height (m)
+wind direction (deg N)
+temperature (deg C)
+relative humidity (percent)
+evaporation rate (complicated units)
+flow rate (L/ha)
+nonvolatile rate (kg/ha)
+active rate (kg/ha)
+number of swaths
+swath width (m)
+boom height (m)
+number of deposition points [always 401]
+  loop: distance (m) + deposition (percent applied)
+number of data deposition points
+  loop: distance (m) + data deposition (percent applied) [3 or average]
+std/var(0/1) test# aircraft_type(0,1,2) %<141 flight_height(m) wind_speed(m/s)
+REPEAT

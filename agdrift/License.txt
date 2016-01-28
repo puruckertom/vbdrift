@@ -1,0 +1,143 @@
+DRAFT: 12/01/00
+
+END-USER LICENSE AGREEMENT FOR SPRAY DRIFT TASK FORCE SOFTWARE
+
+IMPORTANT - READ CAREFULLY: This End-User License Agreement ("LICENSE 
+AGREEMENT") is a legal agreement between you (whether an individual and/or an entity) and 
+the Spray Drift Task Force ("Task Force") concerning installation and use of the AgDRIFT® 
+model, which includes computer software, associated media, printed materials, incorporated 
+data, "online" or electronic documentation, and output from the AgDRIFT® model (collectively, 
+"SOFTWARE PRODUCT"). Your installation and use of the SOFTWARE PRODUCT is 
+subject to the terms and conditions of this LICENSE AGREEMENT and all applicable laws.  
+By installing, copying, or otherwise using the SOFTWARE PRODUCT, you agree to be bound 
+by the terms of this LICENSE AGREEMENT. If you do not agree to the terms of this LICENSE 
+AGREEMENT, do not install or use the SOFTWARE PRODUCT and delete the SOFTWARE 
+PRODUCT from your computer or return it to the Task Force.
+
+SOFTWARE PRODUCT LICENSE
+
+The SOFTWARE PRODUCT is protected by copyright laws and international copyright treaties, 
+as well as other intellectual property laws and treaties. The rights granted to you by this 
+LICENSE AGREEMENT constitute a license, not a transfer of title.
+
+1. GRANT OF LICENSE. This LICENSE AGREEMENT grants you the right to use the 
+SOFTWARE PRODUCT for noncommercial purposes as an educational and management 
+tool for mitigating pesticide spray drift and for educating applicators of pesticides in 
+pesticide spray drift reduction.  You may not decompile, reverse engineer or otherwise 
+attempt to discover the source code of the SOFTWARE PRODUCT.  You may not use the 
+SOFTWARE PRODUCT (which includes output) in any litigation, including without 
+limitation judicial and administrative proceedings.
+
+2. PESTICIDE REGISTRATION DATA.  Without otherwise limiting the terms of the 
+LICENSE AGREEMENT, the SOFTWARE PRODUCT (which includes output) cannot be 
+used for any regulatory purpose - including without limitation pesticide registration, 
+reregistration, exemption, or tolerance-setting, whether in the United States or any of its 
+states, territories, or other subdivisions or in any jurisdiction outside the United States - for 
+the benefit of a person or entity not expressly authorized by the Task Force to rely upon Task 
+Force data or entitled to rely upon Task Force data by virtue of a binding offer to pay 
+compensation under § 3(c)(1)(F)(iii) of the Federal Insecticide. Fungicide, and Rodenticide 
+Act (FIFRA), 7 U.S.C. § 136a(c)(1)(F)(iii), or other provisions of law that provide identical 
+protections to owners and submitters of data.  You recognize that the SOFTWARE 
+PRODUCT (which includes output) is based upon and validated by data owned by the Task 
+Force.
+
+3. COPYRIGHT AND DISTRIBUTION.  You may not remove any copyright or other 
+proprietary notices contained in the SOFTWARE PRODUCT (which includes output) and 
+may not distribute, transfer or publish the SOFTWARE PRODUCT (which includes output) 
+without the express written permission of the Task Force.  You are responsible for 
+maintaining the confidentiality of your account number and/or password, if applicable. You 
+are responsible for all use of copies of the SOFTWARE PRODUCT that you install or 
+distribute and all use of your account or password (if applicable), whether or not actually or 
+expressly authorized by you.
+
+4. GOVERNING LAW AND JURISDICTION. By installing or using this SOFTWARE 
+PRODUCT, you agree that all matters relating to such installation or use shall be governed 
+by the statutes and laws of the District of Columbia, without regard to the conflicts of law 
+principles thereof. You and the Task Force agree and hereby submit to the exclusive personal 
+jurisdiction and venue of the federal and Superior Court of District of Columbia and the 
+United States District Court for the District of Columbia with respect to such matters, except 
+that - for matters regarding the amount of compensation owed to the Task Force arising from 
+use of the SOFTWARE PRODUCT (which includes output) - you or the Task Force may 
+initiate binding arbitration in the District of Columbia under the terms of this LICENSE 
+AGREEMENT.
+
+5. ARBITRATION OF COMPENSATION CLAIMS. If the Task Force loses any data 
+compensation rights in the SOFTWARE PRODUCT as the result of breach of this LICENSE 
+AGREEMENT by you or any person or entity for which you are responsible under this 
+LICENSE AGREEMENT, you offer and agree to compensate the Task Force for such loss 
+(including attorneys fees) and agree to submit such matter to binding arbitration in the same 
+manner provided by FIFRA § 3(c)(1)(F)(iii), 7 U.S.C. § 136a(c)(1)(F)(iii); PROVIDED, 
+however, that in the event that Task Force finds, in its sole discretion, that it will suffer 
+irreparable loss or harm to any of its intellectual property as a result of such breach of this 
+LICENSE AGREEMENT, then Task Force may, but shall not be required to, pursue any and 
+all equitable or legal remedies in any court of competent jurisdiction pending outcome of the 
+arbitration as provided for herein.
+
+6. INDEMNIFICATION. You are responsible for any and all use of the SOFTWARE 
+PRODUCT that you install and you agree to indemnify, defend, and hold harmless the Task 
+Force from any liability or expense arising from such use or misuse.  You further agree to 
+immediately notify the Task Force of any unauthorized use of the SOFTWARE PRODUCT 
+that you install or any other breach of this LICENSE AGREEMENT known to you.
+
+7. U.S. GOVERNMENT RESTRICTED RIGHTS. Under the Cooperative Research and 
+Development Agreement (CRADA) between the U.S. Environmental Protection Agency 
+(EPA) Office of Research and Development, the U.S. Department of Agriculture (USDA) 
+Agricultural Research Service (ARS), USDA Forest Service, and the Task Force, certain 
+government laboratories (namely, the EPA Environmental Research Laboratory, the EPA 
+Atmospheric Research and Exposure Assessment Laboratory, the USDA ARS Aerial 
+Application Research Unit, and the USDA ARS Application Technology Research Unit) 
+have license to use the SOFTWARE PRODUCT on behalf of the U.S. Government.  In 
+addition, under the CRADA and FIFRA, the Task Force provides the EPA Office of 
+Pesticide Programs (OPP) with RESTRICTED RIGHTS to use the SOFTWARE PRODUCT 
+to benefit the U.S. Government. Except as otherwise expressly provided by the CRADA and 
+FIFRA, the SOFTWARE PRODUCT is licensed to U.S. Government end users with only 
+those rights granted to all other end users pursuant to the terms and conditions herein, except 
+that use, duplication, and disclosure within the U.S. Government is subject to the restrictions 
+set forth in subparagraphs (c)(1) and (2) of the Commercial Computer Software-Restricted 
+Rights at 48 CFR § 52.227-19.
+
+8. EXPORT RESTRICTIONS. You agree that you do not intend to and will not, directly or 
+indirectly, export or transmit the SOFTWARE PRODUCT or related documentation and 
+technical data to any country to which or person to whom such export or transmission is 
+restricted by any applicable U.S. regulation or statute, without the prior written consent, if 
+required, of the Bureau of Export Administration of the U.S. Department of Commerce, or 
+such other governmental entity as may have jurisdiction over such export or transmission.
+
+9. MODIFICATIONS.  This LICENSE AGREEMENT cannot be modified to extend the 
+terms of the license except by written agreement between you and the Task Force that 
+expressly supercedes or modifies this LICENSE AGREEMENT.
+
+10. TERMINATION. Without prejudice to any other rights, Task Force may terminate this 
+LICENSE AGREEMENT if you fail to comply with the terms and conditions of this 
+LICENSE AGREEMENT. In such event, you must destroy all copies of the SOFTWARE 
+PRODUCT.
+
+MISCELLANEOUS
+
+Should you have any questions concerning this LICENSE AGREEMENT or desire to license 
+additional rights not granted by this LICENSE AGREEMENT, to publish any information 
+protected by copyright laws and/or this LICENSE AGREEMENT, or to contact Task Force for 
+any reason, please write the Spray Drift Task Force, care of McKenna & Cuneo, L.L.P. / 1900 K 
+Street, NW, Suite 100 / Washington, DC 20006-1108.
+
+LIMITED WARRANTY
+
+NO WARRANTIES. Task Force (including its Officers, Members, and agents) expressly 
+disclaims any warranty for the SOFTWARE PRODUCT. The SOFTWARE PRODUCT and any 
+related documentation is provided "as is" without warranty of any kind, either express or 
+implied, including, without limitation, the implied warranties of merchantability, fitness for a 
+particular purpose, or noninfringement or of the quality, accuracy, suitability of the results 
+generated from the use of the SOFTWARE PRODUCT for predicting spray drift, which depends 
+on actual use conditions. The entire risk arising out of use or performance of the SOFTWARE 
+PRODUCT remains with you.
+
+NO LIABILITY FOR DAMAGES. In no event shall Task Force (including its Officers, 
+Members, or agents) be liable for any damages whatsoever (including, without limitation, 
+damages for loss of business profits, business interruption, loss of business information, or any 
+other pecuniary loss) arising out of the use of or inability to use this Task Force product, even if 
+it has been advised of the possibility of such damages. Without limit the above, the Task Force 
+(including its Officers, Members, or agents) specifically disclaims any responsibility or liability 
+for the reliability or accuracy of the results generated through use of the SOFTWARE 
+PRODUCT to determine or control spray drift.  Because some states/jurisdictions do not allow 
+the exclusion or limitation of liability for consequential or incidental damages, the above 
+limitation may not apply to you.

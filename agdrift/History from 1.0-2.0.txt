@@ -1,0 +1,162 @@
+'*********************************************************
+'History
+'*********************************************************
+'1.11 <- 1.10
+'1.10 <- 1.09
+'1.09 <- 1.08
+'1.08 <- 1.07
+'- Modified Preferences screen to accept list of "Tiers"
+'  comparable to that on the "Tier" menu, rather than
+'  discrete Tier number and application method (and now,
+'  audience)
+'- Added new Canopy section to UserData
+'- Added new Canopy form
+'- Added Smokey to Userdata to designate "audience" as SDTF
+'  (0) or Forest Service (1)
+'- Removed preference allowing initial info screen to be
+'  skipped. Now info screen is always displayed at startup.
+'- Added new Orchard Airblast (OA) section to UserData
+'  consisting of BASICTYP, BEGTROW, ENDTROW
+'- Changed meaning of UD.GA.BasicType as a result of new OA
+'  section. 0-2 low boom m,c,vc 3-5 high boom m,c,vc
+'- Divided UD.SM.SPECGRAV into SpecGrav (tank mix) and
+'  NonVGrav (nonvolatiles only)
+'- Added aircraft multi-engine capability. New variables
+'  NumEng, EngHoriz(2)
+'- Changed handling of nozzle positions by introducing the
+'  concept of a spray boom associated with the aircraft
+'  New variables WingVert, BoomVert, BoomFwd
+'- Changed HGTCAN to SRuff (Surface Roughness), since an
+'  actual canopy model will be introduced
+'- Added half-boom spray capability. New variable HalfBoom
+'- Added ability to edit nozzle positions independently
+'  in all three directions. Redesigned nozzle screen
+'  to accomodate.
+'- Above modification required changing PosVert and PosFwd
+'  to arrays (60) in NozzleData section of UserData.
+'- Added Nozzle type (NozType) to Nozzle Data to support
+'  DSD selection for each nozzle. The idea is to be able to
+'  choose from three different drop distributions for each
+'  nozzle.
+'- Changed the DSD structure to an array of Three DSD structures
+'  in support of the above modification.
+'- Changed the DK structure to an array of three structures also.
+'1.07 <- 1.06
+'- Fixed bug in Stream Assessment where manual entry of the
+'  four distances/times would not be properly read
+'- Added Multiple Application Assessment Toolbox
+'1.06 <- 1.05
+'- Added RCS headers to code and forms for version control
+'- Added file existance checking for Export file dialogs
+'- Added BoomWidth to NozzleData;
+'        NumFA, FADist, FAVal to UserCalc
+'  These additions required updates to:
+'  GetBasicDataNZ, GenReportText, UserDataRead/Write,
+'  introduced UserDataReadOld.
+'- user file format moved from 0 to 1 to support above additions.
+'- Added a new plot for Fraction Aloft based on the new
+'  NumFA, FADist and FAVAL.
+'  Required changes to all the plot setup routines and
+'  to the export data routines and form. Introduced a new
+'  constant PV_FA to support the new plot.
+'- UserCalc was redefined to make its data arrays dynamic. In their
+'  static form, they caused the total static storage size to exceed
+'  64k, which is a no-no in VB16. Routines that modified the UserCalc
+'  data arrays were changed to handle dynamic allocation, and the
+'  Fortran routines that took UC as an argument were changed to allow
+'  individual arrays as arguments. The UserCalc structure was then
+'  removed from the agdstruc.inc fortran include file.
+'- Easter Egg screen credits modified
+'- Numerical Values screen labels changed: "Accountancy" ->
+'  "Accountancy of Active", "Evaporation" -> "Carrier Evaporation"
+'- Changed DropKick default pressure from 40 psi to 60 (4.137 bar)
+'- Added Milt's new routine agstrm.for to DLL to support Stream Assessment
+'- Added new form frmTBStream: Stream Toolbox
+'- Added new constant PV_STRM to support Stream Assessment
+'- Changed Spray Material fields for NV amount, Active amount, and
+'  spray rate to "adjust" their amounts only when pressing the
+'  enter key, rather than after each change. This fixes the behavior
+'  where erasing the Spray Rate would cause the previous two
+'  values to change based on a (momentary) value of zero for
+'  the spray rate.
+'1.05 <- 1.04
+'- Added closing paren to Nonvol Rate in GenReportText
+'- Changed "Nonvol." to Nonvolatile in GenReportText
+'- Milt: Change to agkrn.for, atomize.out
+'1.04 <- 1.03
+'- Fortran DLL mods from Milt
+'- nozzle.out database mods from Milt
+'- Correctly handle nozzle distribution name on main form
+'- Change all Dropkick to DropKick
+'- On calc form, dim Start button after calcs
+'1.03 <- 1.02
+'- Corrections to standard and SDTF Libraries
+'- Mods to FORTRAN limit routines
+'1.02 <- 1.01
+'- Fix: Previously the plot label units were set up in
+'  GenCalcPlotData, which assumed that there would always
+'  be "Current Data" in the plot. That is not always the
+'  case. Created separated routine GenPlotUnits to take
+'  care of the task of setting the units strings, and
+'  added a call to it in GenPlotData.
+'- Changed Aquatic Assessment form so that Active Rate is
+'  taken from UserData only the first time the form is shown.
+'  Subsequently the form remembers the value and adjusts it
+'  to reflect any changes in units.
+'- Changed Spray Block Assessment form to support being hidden
+'  (instead of unloaded) as does Aquatic Asessment. Also added
+'  Active Rate value behavior similar to Aquatic Assessment.
+'- added "(default)" after "Medium" in Tier 1 form
+'- added "(Red entry indicated user input)" to calculations
+'  frames in Aquatic Assessment Toolbox and Spray Block
+'  Assessment Toolbox
+'- Removed all VB3 global constants and changed over to
+'  VB4 built-in constants.
+'1.01 <- 1.0 (released 6/9/97)
+'- Changed access to Easter egg screen to simply double-
+'  clicking on the TM on the About form. Previously one
+'  had to hold down ctrl-alt-shift, type "agdrift", then
+'  double click on the TM.
+'- Added hourglass pointer when changing type on DSD,
+'  DropKick, Aircraft, and Spray Material forms.
+'- Bug: Tier 2 now updates basic nozzle data when new
+'  aircraft is selected.
+'- Changed GetBasicDataNZ to set NZ.PosHorizLimit from 0
+'  (was 75)
+'- Changed DropKick SM defaults to match new library data
+'- Made position of OK, Cancel buttons consistent among
+'  forms. Ok on left, Cancel in LR corner.
+'- Added Nozzle Pressure field and filter to DSD Lib form
+'  to support the addition of pressure data in the database
+'- Added function QueryPerformCalcs to unify asking the user
+'  to perform calcs before continuing.
+'- Added checks in GenCalcPlotData to see not only if calcs
+'  are valid, but also if there is calc data present. This
+'  handles Field Trial library entries, which contain
+'  incomplete calculations.
+'- Added checks in Effective Swath Width toolbox for nonempty
+'  COV calc data and in Spray Block Assessment toolbox for
+'  nonempty Single-swath deposition. The handles Field Trial
+'  library entries which contain incomplete calculations.
+'- Fixed Plot form so that it correctly returns to the
+'  previous successful plot after aborting a PlotVar switch
+'- Introduced global consts for MAX_DROPS and MAX_NOZZLES to
+'  arrays sizes for drops and nozzles.
+'- Modified Dropsize and Nozzles forms to zero out remainder
+'  of arrays after defining new data. This helps ensure proper
+'  display in Input Summary
+'- Modified Input Summary to display the full lists of drops
+'  and nozzles when user and default sizes are different.
+'1.0 (released 6/3/97 to training session in Baltimore)
+'TODO ****************************************************
+'- display filenames
+'- display data changed indicator
+'- print: support "collate copies"
+'- print: support page range
+'- plot: line type doesn't show on dense plots
+'- plot: allow size specification for plot (drag outline?)
+'- plot: legend for multiple-line plots
+'- Delete key: make it work like backspace in text boxes
+'- help: add search keys
+'- help: add browse sequence
+'- dll: tweak Yield() calls in the FORTRAN

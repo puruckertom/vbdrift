@@ -1,0 +1,154 @@
+ 0  "40 Degree Flat Fan (Large Orifice): Fixed-Wing  "
+ 0  "Tip Number        "
+ 0  "  "
+ 0  4010.0  4030.0
+ 1  "Nozzle Angle      "
+ 0  "  "
+ 0  0.0  90.0
+ 1  "40 Degree Flat Fan (Small Orifice): Fixed-Wing  "
+ 0  "Tip Number        "
+ 0  "  "
+ 0  4002.0  4010.0
+ 1  "Nozzle Angle      "
+ 0  "  "
+ 0  0.0  90.0
+ 2  "80 Degree Flat Fan: Fixed-Wing                  "
+ 0  "Tip Number        "
+ 0  "  "
+ 0  8002.0  8010.0
+ 1  "Nozzle Angle      "
+ 0  "  "
+ 0  0.0  90.0
+ 3  "CP-03: Fixed-Wing                               "
+ 1  "Orifice Size      "
+ 0  "  "
+ 4  0.061  0.078  0.125  0.171
+ 1  "Nozzle Deflector  "
+ 0  "  "
+ 3  30.0  55.0  90.0
+ 4  "CP-09: Fixed-Wing                               "
+ 1  "Orifice Size      "
+ 0  "  "
+ 4  0.061  0.078  0.125  0.171
+ 1  "Nozzle Deflector  "
+ 0  "  "
+ 3  0.0  5.0  30.0
+ 5  "CP-11TT with Straight Stream Tips: Fixed-Wing   "
+ 0  "Orifice Size      "
+ 0  "  "
+ 0  8.0  25.0
+ 1  "Nozzle Angle      "
+ 0  "  "
+ 0  0.0  20.0
+ 6  "Disc Orifice 46 Core: Fixed-Wing                "
+ 0  "Orifice Number    "
+ 1  " D"
+ 0  2.0  10.0
+ 1  "Nozzle Angle      "
+ 0  "  "
+ 0  0.0  90.0
+ 7  "Disc Orifice 46 Core Ceramic: Fixed-Wing        "
+ 0  "Orifice Number    "
+ 1  " D"
+ 0  2.0  10.0
+ 1  "Nozzle Angle      "
+ 0  "  "
+ 0  0.0  90.0
+ 8  "Disc Orifice 56 Core: Fixed-Wing                "
+ 0  "Orifice Number    "
+ 1  " D"
+ 0  2.0  10.0
+ 1  "Nozzle Angle      "
+ 0  "  "
+ 0  0.0  90.0
+ 9  "Disc Orifice Straight Stream: Fixed-Wing        "
+ 0  "Orifice Number    "
+ 1  " D"
+ 0  4.0  12.0
+ 1  "Nozzle Angle      "
+ 0  "  "
+ 0  0.0  20.0
+10  "Lund Straight Stream: Fixed-Wing                "
+ 0  "Orifice Size      "
+ 1  " D"
+ 0  6.0  10.0
+ 1  "Nozzle Angle      "
+ 0  "  "
+ 0  0.0  20.0
+11  "40 Degree Flat Fan (Large Orifice): Helicopter  "
+ 0  "Tip Number        "
+ 0  "  "
+ 0  4010.0  4030.0
+ 1  "Nozzle Angle      "
+ 0  "  "
+ 0  0.0  45.0
+12  "40 Degree Flat Fan (Small Orifice): Helicopter  "
+ 0  "Tip Number        "
+ 0  "  "
+ 0  4002.0  4010.0
+ 1  "Nozzle Angle      "
+ 0  "  "
+ 0  0.0  45.0
+13  "80 Degree Flat Fan: Helicopter                  "
+ 0  "Tip Number        "
+ 0  "  "
+ 0  8002.0  8010.0
+ 1  "Nozzle Angle      "
+ 0  "  "
+ 0  0.0  90.0
+14  "Accu-Flo Double Row: Helicopter                 "
+ 1  "Orifice Size      "
+ 0  "  "
+ 0  0.016  0.028
+ 0  "Restrictor Size   "
+ 1  " D"
+ 0  4.0  12.0
+15  "Accu-Flo Single Row: Helicopter                 "
+ 1  "Orifice Size      "
+ 0  "  "
+ 0  0.028  0.063
+ 0  "Restrictor Size   "
+ 1  " D"
+ 0  4.0  12.0
+16  "CP DR High Volume Flat Fan: Helicopter          "
+ 0  "Orifice Size      "
+ 0  "  "
+ 0  8010.0  8020.0
+ 1  "Nozzle Angle      "
+ 0  "  "
+ 0  0.0  20.0
+17  "CP High Volume Flat Fan: Helicopter             "
+ 0  "Orifice Size      "
+ 0  "  "
+ 0  8010.0  8030.0
+ 1  "Nozzle Angle      "
+ 0  "  "
+ 0  0.0  20.0
+18  "CP-03: Helicopter                               "
+ 1  "Orifice Size      "
+ 0  "  "
+ 4  0.061  0.078  0.125  0.171
+ 1  "Nozzle Deflector  "
+ 0  "  "
+ 3  30.0  55.0  90.0
+19  "Disc Orifice 46 Core: Helicopter                "
+ 0  "Orifice Number    "
+ 1  " D"
+ 0  2.0  10.0
+ 1  "Nozzle Angle      "
+ 0  "  "
+ 0  0.0  90.0
+20  "Disc Orifice Straight Stream: Helicopter        "
+ 0  "Orifice Number    "
+ 1  " D"
+ 0  4.0  12.0
+ 1  "Nozzle Angle      "
+ 0  "  "
+ 0  0.0  20.0
+21  "Raindrop RD: Helicopter                         "
+ 0  "Orifice Number    "
+ 1  "RD"
+ 0  4.0  12.0
+ 1  "Nozzle Angle      "
+ 0  "  "
+ 0  0.0  20.0

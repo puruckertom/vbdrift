@@ -1,0 +1,434 @@
+The following is the change log from AgDRIFT prior to the
+release of version 1.0. This text is a series of comment lines
+that were in the General sectionof  agdrift1.bas. They were
+removed when version 1.0 was released, but were retained here
+for future reference.
+
+TBC 5/30/97
+
+'*********************************************************
+'History
+'*********************************************************
+'Changes: Beta version 0.18 -> Version 1.0 ***************
+'- Changed Info form: Made "Even though..." a separate paragraph
+'  and added "Approval is expected in 1998."
+'- Changed orchard order to Normal Dense Sparse in Tier 1
+'  and Tier I Library forms
+'- Added "Easter Egg" screen
+'- Changed Surface Roughness default from .005 to .0075
+'- Fixed batch operations where the last file did not
+'  update the "data changed" flag properly
+'- Changed orchard order on Tier1, Tier1Lib forms to Normal, Dense, Sparse
+'- Removed printing of vertical line at extrapolation point for
+'  field trial deposition plots, but left all coding in place
+'- Added "TM" Symbol to AgDRIFT on forms
+'Changes: Beta version 0.17 -> Beta version 0.18 ***************
+'(Released 4/2/97)
+'- Fixed Aquatic Assessment Toolbox: Wasn't tracking changed to
+'  user defined pond dimensions when changing from EPA-defined.
+'  If you clicked "User-defined", then entered numbers, everything
+'  worked well. If you simply entered new pond dimensions and let
+'  the pond type flip automatically, the internal pond type wasn't
+'  properly updated and EPA numbers were used for the calc.
+'- Added LibraryPath to UserInterface structure to handle
+'  Standard/SDTF Libraries
+'- Incorporated library search algorithm. The idea is this: The
+'  distribution of AgDRIFT will include a standard library
+'  (agdrift.mdb). Members of the SDTF will receive a special library
+'  (agdsdtf.mdb). If the SDTF library is present, AgDRIFT will use
+'  it and ignore the standard library. If only the standard library
+'  is present, AgDRIFT will use it. If neither library is present,
+'  AgDRIFT will present an error message and terminate gracefully.
+'- Added "Aircraft Centerline" as type 4 for Swath Displacement type
+'  for Tier II/III
+'- Removed "Nonsquare" from "EPA Nonsquare ..." on toolboxes
+'- Changed "Downind Distance" to "Downwind Pond Width" on TBAquatic
+'  and TBSprayBlock
+'- Add input for Pond Width on TBSprayBlock
+'- Fixed dimming of Number of Swaths controls on Tier 1
+'Changes: Demonstration version 16 -> Beta version 0.17 ***************
+'(Build 4 released 3/24/97)
+'- Handle systems with no printer configured.
+'- Remove agdrift.rvt file on program exit.
+'- Fixed plotting so that when the plot variable is changed on the plot
+'  form to a variable that cannot be displayed (i.e. calculation need to
+'  be done), the plot reverts to the previous variable.
+'- Fixed Tier 1 dep and PID plots to correctly reset the extrapolation
+'  variable when moving from aerial to ground/orchard and back.
+'(Build 1 released 3/19/97 to Dave Esterly)
+'- changed display of version number to show the "real" number described
+'  as as "Beta" version. Previously the version number was divided by 100
+'  and displayed as a "Demonstration" version. (e.g. version 0.16 was
+'  "Demonstration version 16" whereas 0.17 is "Beta version 0.17"
+'- added BasicSGL table to library for Tier 1 Single-swath Deposition
+'- changed GetTier1Calcs to support Single-swath deposition
+'- enabled Spray Block Assessment Toolbox in Tier 1 aerial/ground
+'  to take advantage of newly available single-swath deposition
+'- Added "User Information" form and "ShowInfoOnStartup" preference
+'- Changed "Canopy Height" to "Surface Roughness" for Tier III form
+'- Added 3rd column to DSD form to allow display and edit of Cumulative
+'  mass fraction as well as Incremental Mass Fraction. Removed "Total"
+'  display, as the CMF column now provides that info.
+'- Removed "Stochastic Assessment" from toolbox menu
+'- Changed "Stone or Plum" to "Stone or Pome" in Orchard Airblast
+'- Removed Drop Distance toolbox access for Tier I
+'- Removed Drop Library access from Tier I Plot Options
+'- Removed Saved Results access from Tier I Plot Options
+'- Added Tier and "Run ID" to all Toolbox printouts and Numerical Values
+'Changes: Demonstration version 15 -> 16 ***************
+'Released 2/18/97
+'- consolodated Field Trial Library into main database
+'- enhanced error checking for libraries.
+'- added check for existance of Field Trial tables in library
+'  to support installations that aren't allowed access to
+'  the Field Trial data
+'- Added NumSgl, SglDist, SglVal to UserCalc
+'- Added NumBlk, BlkWdth, BlkVal to UserCalc
+'- Added NumSwaths to GADATA
+'- New routine agsblk to support spray block assessment
+'- New flag for agends to support single swath deposition
+'- New args for aggrnd to support tier and new downwind data
+'- New aglibr arg to return max dist downwind for tier 3
+'- Changed units for agnums param XEV to %
+'- Split out UserCalc from UserData structure and made new UC global
+'- Removed DROPKICKVERSION
+'- Changed "psig" back to "psia" in UnitsNameSys. Only used by
+'  DropKick currently.
+'- Changed Distribution Limit on Nozzles (GetBasicDataNZ) from 0 to 75%
+'- Completed Spray Block Assessment form and enhanced Plot routines
+'  to support it.
+'- Created new form (frmExportToolbox) to support exporting data from
+'  Spray Block Assessment form
+'Changes: Demonstration version 14 -> 15 ***************
+'Released 12/3/96
+'- AGNUMS calling arguments changed. Added Downwind Deposition.
+'- Add DownwindDep to CALC
+'- Fixed Bug in PlotPrefsRead and PlotPrefsWrite that kept
+'  NT users from plotting.
+'- Changed Tier I to allow only one type of Ground Sprayer and
+'  one type of Airblast Sprayer.
+'- Added "Spray Block Assessment" to Toolbox menu, but left disabled.
+'- Changed "Fraction of Applied" to "Fraction of Application Rate"
+'  on plots and output.
+'Changes: Demonstration version 13 -> 14 ***************
+'Released 10/29/96
+'- Add DropKick "version" to about box
+'- Fixed Field Trial Library Help Indices
+'- Export form: uncheck checkboxes as well as making them
+'  dim.
+'- Increase array sizes in Export to 900
+'- Increase UD.CALC.DEPDist and ED.CALC.DEPVal to 900 elements
+'- Increase UD.CALC.PIDDist and ED.CALC.PIDVal to 900 elements
+'- Assessment TB: add active rate input box that allows input
+'  only for Tier I. For other Tiers it just displays current
+'  active rate.
+'- Add Function SourceIsValid to filter inappropriate data
+'  sources from Plot Options combo boxes.
+'- Add Function SourceToSourceID to convert text data source
+'  strings into the corresponding ID.
+'- cleaned up error handling in GenPlotData for invalid sources
+'  and unify method of validity checking to use new routines above.
+'- Add MaxDownwindDist to UD.CTL
+'- Add Max Downwind Distance to Advanced Settings.
+'Changes: Demonstration version 12 -> 13 ***************
+'- Released 8/22/96 to SDTF
+'- Change "Vertical Deposition" to "Vertical Profile" everywhere
+'- Modify GenReportText to accomodate Special Tier I format
+'- Changed Numerical Values to display "n/a" in Airborne Drift and
+'  App Eff if Swath Disp Type is Fraction of Applied
+'- Activated "Advanced" menu
+'- Added PropEff to ACDATA
+'- Added DragCoeff to ACDATA
+'- Added WindHeight to METDATA
+'- Added Pressure to METDATA
+'- Added VortexDecay to METDATA
+'- Added MaxComputeTime to CTLDATA
+'- Added ability to recompute Dropkick calcs at runtime
+'  if a data mismatch requires it.
+'- Added WD (Wind Dir) to MET section of UserData
+'- Increased size of DepDist and DepVal in CALC from 199 to 400
+'  to accomodate field trial data
+'- Change "% Applied" to "Fraction of Applied" everywhere
+'- Change Plotting routines to use dynamic arrays for
+'  plot data.
+'- Add support for new f77 routine AGUPDS
+'- Finish frmTrialLib for Field Trial Library browsing
+'Changes: Demonstration version 11 -> 12 ***************
+'- Released 7/29/96 to SDTF
+'- Upgraded to Visual Basic 4.0
+'- Changed all form controls to 3D appearance and un-bold text
+'- Set printed plots to fill available paper size
+'- Created new library agtrial.mdb for field trial data.
+'  Currrently contains a few sample entries.
+'- Add Field Trial library browsing, but no functionality
+'- Reformatted Tier I form to support Orchard applications
+'- Add AppEff to UD.CALC (application efficiency)
+'- Add Advanced Settings dummy form.
+'- Add DSD Interpolate functionality with the agfill routine
+'- Add DropDiam Table to library to replace agdsl calls
+'- Removed agdsl calls.
+'- Renamed agdrift.dll to agdr_dll.dll to avoid naming
+'  conflicts with agdrift.exe. VB 4.0 could not see agdrift.dll
+'  when running the compiled version of agdrift.exe.
+'Changes: Demonstration version 10.1 -> 11 ***************
+'- Add Application Efficiency to Numerical Values form.
+'- Add "Fixed-Column" option to Export Form
+'- Remove separate Plotting units specification. use prefs only.
+'- Remove units specifications from Export form
+'- Add "Interpolate" button to User-defined section of DSD form
+'- Add "Import" button to User-defined section of DSD form
+'- Change "Terrestrial Assessment" menu item to "Stochastic Assesment".
+'  This item still does nothing.
+'- Changed Plot routines to remove data < 1e-36 for log scales.
+'- Reformatted GenReportText to print default data beside
+'  current data when current data differs from default.
+'- Changed Numerical Values form to not display Accountancy data for
+'  anything below Tier III
+'- Add Legend to Plot form
+'Changes: Demonstration version 10.02 -> 10.1 **************
+'- Fixed Basic Aircraft data retrieval in aircraft form.
+'  Did not convert units.
+'- Changed "psia" to "psig" in UnitsNameSys. Only used by
+'  DropKick currently.
+'- Fixed Aquatic Assessment to handle units changes and to
+'  remember data from previous invokations.
+'Changes: Demonstration version 10.01 -> 10.02 **************
+'- more error handling
+'Changes: Demonstration version 10.0 -> 10.01 **************
+'(debugging version)
+'- Added error handling to many plot form routines
+'- Added PropTakeAction to Plot form
+'Changes: Demonstration version 9.1 -> 10.0 **************
+'(released to Dave Esterly 4/1/96)
+'- Added hourglass cursor to all calculation screens
+'- Fixed: selecting flux in Export gave PID and vice-versa
+'- Fixed: loading saved plot data for additional curves did
+'         not convert to the current plot units.
+'- Added filename and change indicator to input form captions.
+'- Added Accountancy frame to Numerics
+'- Changed GenReportText to taylor output to Tier and
+'  user selections. Irrelevant data is no longer printed.
+'- Combined Calculation/Batch forms into one form.
+'- Implemented Canopy Height (CanopyHeight) added in previous
+'  release and added input control in Tier III
+'- Added Concentration storage space to UserCalc for new
+'  concentration plots. NumConc, ConcDist, ConcVal
+'- Added storage for % Airborne Drift and Evaporated Fraction
+'  AirborneDrift, EvapFrac
+'- Activated DropKick CalcType buttons 1 & 2, added third
+'  type: Rosin-Rammler
+'- Reorganized Print dialogs and printing routines to
+'  support printing of toolbox forms as well as user data
+'- Adapted plotting forms and code to allow selection of
+'  any data source in any 'slot'. Previously "Current
+'  Data" was hard-coded into slot 0.
+'- Changed default Swath Width to 60 ft
+'- Added 2nd information line to calculation window
+'  that first warns about screen savers, then shows
+'  elapsed time.
+'- Added 1 hour average concentration plot
+'- Added COV and Concentration to Export form. Unified
+'  plot and export data generation code to ensure identical
+'  data generation.
+'- Reorganized Dropsize library form to allow general use
+'- Using reorganized form above, added ability to select
+'  drop library entries in Plot Options form.
+'- Added a "Save" button in plot options. Added provisions
+'  for saving plot options in Prefs file
+'- Added a "Defaults" button in plot options. Added provisions
+'  for restoring default plot settings.
+'- Converted Toxicity Calculator into Aquatic Assessment
+'- Added Terrestrial Assessment to menu bar as a "dimmed" item
+'- Added a second title line to Plots to contain Plot name.
+'  Now the "RunTitle" contains the Run Title by default
+'  and the "PlotTitle" contains a descriptive string e.g.
+'  "Tier I Incremental Volume Fraction"
+'- Fixed bug in Log plots where an error occured if the user
+'  tried to use a non-integer increment. Fixed by forcing the
+'  increment to be an integer >= 1
+'- Added Print button to Calculation Log and Notes forms
+'- Changed "Flux" to "Vertical Deposition" on forms and output
+'- On exit, query the user to save Plot Settings, if changed
+'- Added new DropKick reminder for SpecGrav/Airspeed differences
+'- Added DropKick Warning message for BLN method
+'- Introduced custom setup routine
+'Changes: Demonstration version 9.0 -> 9.1 ***************
+'(released 3/4/96)
+'- Assessment calc and Disp Dist: Moved InitData call to
+'  Activate method of Form. Because the form is now being
+'  hidden instead of unloaded, the form was not picking up
+'  changes in data.
+'- Removed "esterly files" from export browser
+'- Changed Active/Nonvol "Amount" to "Rate" in GenReportText
+'  to be consistant with forms
+'- Changed DropKick Defaults: Airspeed 80 -> 100 mph
+'                             Pressure    -> 40 psia
+'- Dim "Select Tier" for ground application
+'- Add space for canopy height in User File, and default to
+'  0.15, but do not implement yet.
+'Changes: Demonstration version 8.0 -> 9.0 ***************
+'- Changed "Trouton" to "ElongVisc" in DROPKICKDATA and
+'  made corresponding changes to DropKick form and
+'  DropKick Material Library form.
+'- Changed TROUTON to "ELONGVIS" in agdstruc.inc
+'- Changed a stray "Nozzle Angle" to Nozzle Orientation"
+'  in DSD Library
+'- Removed stray "Pos" from Aircraft form "Eng ." Vert/Horiz
+'- Changed stray NV/Act "Amt" to "Rate" in Spray Mat.
+'- Changed "Exposure Calculator" to "Assessment Calculator"
+'  and within the form, changed Toxicity frame to MAD and
+'  Toxicity Level to Initial Concentration.
+'- Fixed DSD naming update in DSD form.
+'- While I was at it, fixed Nozzle naming as well.
+'- Changed COV calculator to display "out of range!" rather
+'  than blank on return value of -1.
+'- Help file update
+'Changes: Demonstration version 7.0 -> 8.0 ***************
+'- added AGFormat$ to format numbers in such a way that will
+'  "clean up" those extra decimal places associated with
+'  units conversion.
+'- changed tier changing so that recalculating is only necessary if
+'  data must be adjusted to fit the new tier.
+'- added MaxErrorLevel to DK and CALC to allow tracking of errors and
+'  warning during calcs.
+'- added missing UD.CTL.SwathDispType to user data file
+'- dim calc log for Tier I
+'- fixed update of SwathDisp value on type change
+'- Changed Flux Plane default to 0.0 from 45 ft
+'- Widened Input Summary form
+'- Widened Calc Log form
+'- Widened Calc form
+'- changed lbs/ac to lb/ac
+'- dim Flux in plot menu for SwathDisp=%max depos
+'- fixed justification on warning msg in input summary of calc
+'Changes: Demonstration version 6.0 -> 7.0 ***************
+' (released to Dave Esterly 1/31/96)
+'- added Calculation Log to user input. added view option for
+'  this feature in View menu.
+'- agfrac now has a flag the allows computation of NV fraction.
+'  added support for this function, recalculating NV fraction
+'  whenever changes are made to Spray Mat inputs. (Tier II,
+'  and Spray Material under Tier III)
+'- Added units to Input Summary
+'- Added CalcType to Dropkick data
+'- Added CalcType support to DropKick form, but only RN
+'  is currently allowed (type 0)
+'- Removed COV from Calc Data and
+'  added NumCOV, COVVAL, COVESW for COV/Effective Swath Width Support
+'- Changed Read/Write routines to reflect new dropkick and COV data
+'- Changed file format header from AGDRIFT_Format to AGDRIFT_userdata
+'  and reset USERFILEVERSION to 0
+'- fixed units update on forms that are hidden and not unloaded
+'- Added default data for Dropkick data
+'- Moved Numerical Values In View menu from bottom to just below
+'  input summary
+'- Added COV plot
+'- Changed all F50's to < 50 um, etc.
+'- Changed AT 401 to AT-401, (501 also) in Basic AC
+'- Added UD.CALC.SwathDisp to [Read|Write]UserData
+'- Added SwathWidthType to ControlData to allow different
+'  type of swath width definition. If this flag is not zero
+'  then the SwathWidth variable contains a factor by which to
+'  multiply the wingspan to get the swath width/
+'- Added controls for Swath Width type on Tier II and III forms
+'- Added user-selectable units systems: English or Metric
+'- Added Name field to Aircraft and Spray Material forms
+'- Changed internal storage assumption from English to Metric
+'- Cosmetic changes to some form labels
+'- Changed Toolbox "OK" buttons to "Close"
+'- Changed Toolbox forms to hide on close instead of
+'  unload. This preserves window positions between calls.
+'- Added Run ID to input summary
+'- Added combo box in plot window to allow switching
+'  between plot vars.
+'- Disable Flux Plane input, Flux plots, and Flux Export
+'  when Swath Displacement Type is "% max deposition"
+'- Added Preference "Suppress Tier III Calculation Warnings"
+'- Added Preference "DropKick Solution Type"
+'- Added "Swath Displacement" to Numerical Values form
+'- Removed "Effective Swath Width" and COV from Numerical Values
+'  (They will go on the new COV calculator)
+'- Moved Numerical Values on the View menu to Just below "Input Summary"
+'- Created new Toolbox form "COV Calculator"
+'Changes: Demonstration version 5.0 -> 6.0 ***************
+'- Major restructuring of UD and UI structures. All of the
+'  items that were stored temporarily in UI were
+'  transferred to UD.
+'- Major changes in fortran structure related to the
+'  change described above.
+'  removed: agtr1, agav1, aggr1, aggv1, agds1, agtier,
+'           agac2, agnz2
+'  changed: agkick
+'  added:   agave, aggrnd
+'- replaced "Flow Rate" with "Spray Rate" on all forms
+'- added Notes string to user data. Required special
+'  handling in read/write routines
+'- consolidated Input Summary, Print and Print Preview
+'  report generation to take advantage of new GenReportText
+'  function and large string handling routines described
+'  above.
+'- Added CodeVersion, StartDate, and StartTime to UserCalc
+'  structure to support a run ID on all output.
+'- Added "File Exists" dialog to Save As operations
+'- Blocked user from changing tiers when Tier1 Ground model
+'  is active.
+'Changes: Demonstration version 4.0 -> 5.0 ***************
+'- Added Icon Thermometer bar for minimized calc window
+'- Restored Tier I ground low boom option
+'- Added Tier III calcs and activated associated menus
+'- Added Nozzles form to Tier III
+'- Added Aircraft form and library to Tier III
+'- Fixed HelpId in Component list in Libraries
+'- Rearranged UD and UI to better organize data
+'- Fixed Tier II carrier type. code was in "_change"
+'  method, rather than "_click" method.
+'Changes: Demonstration version 3.0 -> 4.0 ***************
+'- Added Input Summary form and output. Introduced
+'  GenReportText to create report text. This could be
+'  expanded to generate text for Print Preview and Print
+'  report.
+'- More Tier III stuff, but Tier II is still not activated.
+'  Spray material and Spray Mat Library work.
+'- Spray Material: for library entries, active amount
+'  and nonvol amount are adjusted (based on novol fraction)
+'  when flow rate is changed.
+'- Completed Log scale option
+'- Bug: bomb closing Plot Options form using control box.
+'   fixed by causing QueryUnload event to hide the form.
+'- Bug: minimizing plot window caused error in ResizePlot.
+'   fixed by removing minimize button.
+'- change tier II aircraft to Ag Husky, Turbo Thrush,
+'  Wasp Helicopter, and added Air Tractor as new default
+'- DropKick form added with nozzle library and material library
+'- added record counter for library browsers
+'- added component library
+'- Bug: bombs on null record selection in libraries. Fixed.
+'- recoded .ini file handling to use Windows Kernel routines
+'- added view input summary to menu but did not implement
+'- changed Flux Plane default to 45 feet
+
+'Changes: Demonstration version 2.0 -> 3.0 ***************
+'- fix [Tier x Input] title bar problem
+'- reformat Toxicity Calculator. Eliminate Results box
+'- rename Toxicity Calculator to Exposure Calculator
+'  and place results in each input box.
+'- Add "Esterly files (*.prn)" to Export files form.
+'- Create Drop Distance and Dispersion Distance tools and
+'  add to Toolbox
+'- Change Exposure defaults from 0's to 208 ft and 0.5 ft
+'- Change out of range error message to exclude current
+'  value
+'- Improve formatting on plot tic labels to eliminate
+'  "9.9999999E-02" as a tic label
+'- Create Preferences screen. Includes:
+'   Starting tier, Warn on tier change, Pause before calc
+'- Modified calc forms to support spuse before calc.
+'- Added distance units selection as plot option
+'- Added distance units selection as export option
+'- Added "Include Headers" as Export option
+'- improved page preview so that pagination is consistent
+'  for all zooms, previews, and printing.
+'- modified "dimming" in menus to support new functions
+'- Changed Plot form from MDI child to independent window.
+'  Added Close, Options, and Print buttons to form.
+'- Improved grid cell editing to use "floating" text box.

@@ -1,0 +1,62 @@
+How to prepare an AgDRIFT distribution
+
+Public Use version
+- Open the AgDRIFT project in VB
+- basAGDRIFT1: set AGDRIFTREGULATORY to False
+- File -> Make AgDRIFT.exe
+- Add-Ins -> Package and Deployment Wizard
+  - Package
+  - Select "AgDRIFT Public Setup Package" if it exists, Next
+  - Select Standard Setup package, Next
+  - Package folder = C:\My Documents\Work\agdrift\SETUP\dist_pub, Next
+  - No included DAO drivers, Next
+  - File list: make sure it includes:
+      agdrift.exe
+      agdrift.hlp
+      agdrift32.dll
+      agdrift.mdb
+      agdmaa.mdb
+      UserManual_pub.pdf
+      (possibly grid32.ocx)
+  - Single Cab, Next
+  - Installation Title: AgDRIFT
+  - Start Menu Items: agdrift.exe
+  - Install locations: all in above list (except grid32.ocx) goes in $AppDir
+  - Shared files: only grid32.ocx
+  - Script name: "AgDRIFT Public Setup Package", Finish
+
+Regulatory version
+- Open the AgDRIFT project in VB
+- basAGDRIFT1: set AGDRIFTREGULATORY to True
+- File -> Make AgDRIFT.exe
+- Add-Ins -> Package and Deployment Wizard
+  - Package
+  - Select "AgDRIFT Regulatory Setup Package" if it exists, Next
+  - Select Standard Setup package, Next
+  - Package folder = C:\My Documents\Work\agdrift\SETUP\dist_reg, Next
+  - No included DAO drivers, Next
+  - File list: make sure it includes:
+      agdrift.exe
+      agdrift.hlp
+      agdrift32.dll
+      agdrift.mdb
+      agdmaa.mdb
+      UserManual_reg.pdf
+      (possibly grid32.ocx)
+  - Single Cab, Next
+  - Installation Title: AgDRIFT
+  - Start Menu Items: agdrift.exe
+  - Install locations: all in above list (except grid32.ocx) goes in $AppDir
+  - Shared files: only grid32.ocx
+  - Script name: "AgDRIFT Regulatory Setup Package", Finish
+
+Proprietary Library
+- Delete existing setup.exe
+- Copy agdsdtf.mdb from AgDRIFT folder to dist_lib folder
+- Right-click, "Add to Zip"
+  - change archive name to "setup.zip" in current folder, create zip, exit
+- Right-click setup.zip, "Create Self-Extractor (.EXE)"
+  - Default unzip-to folder= "C:\Program Files\AgDRIFT", create, close
+- Delete agdsdtf.mdb, setup.zip
+
+

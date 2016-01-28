@@ -1,0 +1,18 @@
+; This file is maintained by HCW. Do not modify this file directly.
+
+; $Id: agdrift.hpj,v 1.5 2001/05/24 20:16:34 tom Exp $
+; Options
+[OPTIONS]
+COMPRESS=12 Hall Zeck
+ERRORLOG=AGDRIFT.LOG
+LCID=0x409 0x0 0x0 ; English (United States)
+REPORT=Yes
+CONTENTS=CONTENTS
+TITLE=AgDRIFT Help
+HLP=..\agdrift.hlp
+
+[FILES]
+aghelp.rtf
+
+[MAP]
+#include Topic Index Map.txt
